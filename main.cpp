@@ -4,8 +4,13 @@ int main()
 {
 	RingBell bells;
 
-	bells.PlayBell_1();
-	bells.PlayBell_2();
+	bells.GetTime();
+	bells.ReadFile();
+
+	cout << "The Bells will ring at:" << endl;
+	bells.CalcTime();
+
+	bells.WaitTime();
 
 	return 0;
 }

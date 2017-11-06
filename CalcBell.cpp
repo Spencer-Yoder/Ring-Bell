@@ -1,10 +1,13 @@
 #include "Header.h"
 
+//This function Calculates the time when the bells will ring
+//and out puts them to the user. If the time is more than 60
+//min it will reset back to 0.
 void RingBell::CalcTime()
 {
 	int count = 1;
 
-	for (vector<int>::iterator iter = ring_times.begin(); iter != ring_times.end(); iter++)	
+	for (vector<int>::iterator iter = ring_times.begin(); iter != ring_times.end(); iter++)	//Iterate through the vector
 	{
 		int Temp_hour = 0;
 		int Temp_min = 0;
